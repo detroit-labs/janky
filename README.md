@@ -250,8 +250,8 @@ Get your environment up and running:
 
 Create the databases:
 
-    mysqladmin -uroot create janky_development
-    mysqladmin -uroot create janky_test
+    psql -c "CREATE DATABASE janky_development;"
+    psql -c "CREATE DATABASE janky_test;"
 
 Create the tables:
 
