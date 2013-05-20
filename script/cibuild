@@ -2,7 +2,7 @@
 set -ex
 
 RACK_ENV="test"
-DATABASE_URL="mysql2://root@localhost/janky_test"
+DATABASE_URL="postgres://localhost/janky_test"
 export RACK_ENV DATABASE_URL
 
 test -n "$RBENV_VERSION" && {
@@ -14,6 +14,5 @@ hostname
 ruby -v
 env
 bundle install --binstubs --path vendor/gems
-mysql -u root -e "CREATE DATABASE IF NOT EXISTS janky_test"
 bin/rake db:migrate --trace
 bundle exec script/test

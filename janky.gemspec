@@ -15,7 +15,7 @@ https://github.com/github/janky/commit/0fc6214e3a75cc138aed46a2493980440e848aa3#
 EOL
 
   # runtime
-  s.add_dependency "rake", "~>0.9.2"
+  s.add_dependency "rake", "~> 10.0.0"
   s.add_dependency "sinatra", "~>1.3"
   s.add_dependency "sinatra_auth_github", "~>0.7.0"
   s.add_dependency "mustache", "~>0.11"
@@ -27,7 +27,7 @@ EOL
   # development
   s.add_development_dependency "shotgun", "~>0.9"
   s.add_development_dependency "thin", "~>1.2"
-  s.add_development_dependency "mysql2", "~>0.3.0"
+  s.add_development_dependency "pg", "~>0.15.0"
 
   # test
   s.add_development_dependency "database_cleaner", "~>0.6"
